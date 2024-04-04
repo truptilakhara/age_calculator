@@ -49,7 +49,7 @@ btn.addEventListener("click", function () {
       ans_day = sum - sum_days;
     }
     //
-    else if (birth_month === month) {
+    else if (birth_month === month && date===birthday_date) {
       ans_year = year - birth_year;
       ans_month = month - birth_month;
       ans_day = birth_date - date;

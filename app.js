@@ -49,10 +49,12 @@ btn.addEventListener("click", function () {
       ans_day = sum - sum_days;
     }
     //
-    else if (birth_month === month && date===birthday_date) {
-      ans_year = year - birth_year;
-      ans_month = month - birth_month;
-      ans_day = birth_date - date;
+    else if (birth_month === month && date === birth_date) {
+      
+        ans_year = year - birth_year;
+        ans_month = month - birth_month;
+        ans_day = birth_date - date;
+      
     } else {
       //YEAR//
       ans_year = year - birth_year - 1;
@@ -91,6 +93,7 @@ btn.addEventListener("click", function () {
         ans_day = days_array[0] + days_array[days_array.length - 1];
       }
     }
+
     let a = `Current age:
      You are ${ans_year} years ${ans_month} months ${ans_day} days old`;
     document.getElementById("ag").innerText = a;
